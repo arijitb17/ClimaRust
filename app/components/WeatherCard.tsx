@@ -33,10 +33,14 @@ const WeatherCard = () => {
         params: { city, country },
       });
       setWeatherData(response.data);
-    } catch (err: any) {
-      console.error('❌ Error fetching weather:', err);
-      setError('Failed to fetch weather data.');
-    } finally {
+    }catch (err: unknown) {
+        if (axios.isAxiosError(err)) {
+          console.error('❌ Axios error:', err.response?.data || err.message);
+        } else {
+          console.error('❌ Unknown error:', err);
+        }
+        setError('Failed to fetch weather data.');
+      } finally {
       setLoading(false);
     }
   };
