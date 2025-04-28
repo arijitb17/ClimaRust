@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Weather-App-Rust",
+  title: "ClimaRust",
   description: "Created in Rust and Nextjs",
   icons: {
-    icon: "/favicon.ico", // The path to your favicon file
+    icon: "/favicon.ico", 
   },
 };
 
