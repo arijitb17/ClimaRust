@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌤️ ClimaRust
 
-## Getting Started
+**ClimaRust** is a lightweight weather checker app built with **Rust (Actix Web)** on the backend and **Next.js** on the frontend. It fetches real-time weather data using the [Open-Meteo API](https://open-meteo.com/), with city and optional country code input.
 
-First, run the development server:
+### 🌐 Live Demo
+🔗 [https://climarust.vercel.app](https://climarust.vercel.app)
 
-```bash
+---
+
+## ⚙️ Tech Stack
+
+| Layer        | Technology         |
+|--------------|--------------------|
+| Frontend     | Next.js, TypeScript, Tailwind CSS |
+| Icons        | Lucide React       |
+| Backend      | Rust, Actix Web, Reqwest |
+| CORS         | actix-cors         |
+| Hosting      | Vercel (Frontend), your choice for Rust (Render, Railway, Fly.io, etc.) |
+
+---
+
+## ✨ Features
+
+- 🌎 Search weather by city (and optional country code)
+- 🌡️ Real-time temperature, wind speed, and weather code
+- 🧊 Sleek glassmorphism UI
+- 📦 Built using fast, modern web technologies
+- 💨 Error handling and loading states
+
+---
+
+## 🖥️ Local Development
+cd weather-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
